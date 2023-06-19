@@ -57,7 +57,7 @@ RUN apk update \
 	&& rm -rf /usr/share/man/ \	
 	&& rm -rf /var/cache/apk/* \
 	&& rm -rf $HOME/.cache \
-	&& chmod +x /entrypoint.sh \
+	&& chmod +x /entrypoint.sh
 
 # Port SSH
 EXPOSE 22/tcp

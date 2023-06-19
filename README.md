@@ -31,8 +31,6 @@ Images for the following OS versions are builded:
 * Debian: 12, 11, 10;
 * Alpine: 3.18, 3.17, 3.16, 3.15.
 
-⚠️ The armhf (ARM32v7) architecture from Alpine 3.18 and higher is no longer supported. The final image for armhf is built on the Alpine 3.17 image, `:alpine-armhf` tag.
-
 ### Tags for RISC-V (riscv64)
 
 * `:ubuntu-riscv64` - Ubuntu 22.04;
@@ -94,7 +92,7 @@ login `root`, password `654321`
 
 #### Midnight Commander (Visual file manager)
 
-![Image of Midnight Commander](https://raw.githubusercontent.com/devdotnetorg/docker-alpine-ssh/master/screenshots/scr1-ubuntu-ssh.png)
+![Image of Midnight Commander](https://raw.githubusercontent.com/devdotnetorg/docker-openssh-server/master/screenshots/scr1-ubuntu-ssh.png)
 
 Site: http://midnight-commander.org/
 
@@ -104,7 +102,7 @@ Start: `$ mc`
 
 #### htop (an interactive process viewer for Unix)
 
-![Image of htop](https://raw.githubusercontent.com/devdotnetorg/docker-alpine-ssh/master/screenshots/scr2-ubuntu-ssh.png)
+![Image of htop](https://raw.githubusercontent.com/devdotnetorg/docker-openssh-server/master/screenshots/scr2-ubuntu-ssh.png)
 
 Site: http://hisham.hm/htop/
 
@@ -114,7 +112,7 @@ Start: `$ htop`
 
 #### Net tools
 
-![Net tools](https://raw.githubusercontent.com/devdotnetorg/docker-alpine-ssh/master/screenshots/scr3-ubuntu-ssh.png)
+![Net tools](https://raw.githubusercontent.com/devdotnetorg/docker-openssh-server/master/screenshots/scr3-ubuntu-ssh.png)
  
 ## Assembly for devices ##
 
@@ -128,4 +126,4 @@ Build script see [buildx-tags.sh](https://github.com/devdotnetorg/docker-openssh
 
 ## Need help?
 
-If you have questions on how to use the image, please send mail to anton@devdotnet.org
+If you have questions on how to use the image, please send mail to anton@devdotnet.org or visit the web-site [DevDotNet.ORG](https://devdotnet.org/).

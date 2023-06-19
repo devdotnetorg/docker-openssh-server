@@ -42,11 +42,8 @@ docker buildx build --platform linux/arm,linux/arm64,linux/amd64 -f Dockerfile.u
 #3.17
 #3.16
 #3.15
-docker buildx build --platform linux/arm64,linux/amd64 -f Dockerfile.alpine --build-arg IMAGE_VERSION=alpine:3.18 -t devdotnetorg/openssh-server:alpine . 
-docker buildx build --platform linux/arm64,linux/amd64 -f Dockerfile.alpine --build-arg IMAGE_VERSION=alpine:3.18 -t devdotnetorg/openssh-server:alpine-3.18 . 
-#last armhf
-docker buildx build --platform linux/arm -f Dockerfile.alpine --build-arg IMAGE_VERSION=alpine:3.17 -t devdotnetorg/openssh-server:alpine-armhf . 
-#
+docker buildx build --platform linux/arm,linux/arm64,linux/amd64 -f Dockerfile.alpine --build-arg IMAGE_VERSION=alpine:3.18 -t devdotnetorg/openssh-server:alpine . 
+docker buildx build --platform linux/arm,linux/arm64,linux/amd64 -f Dockerfile.alpine --build-arg IMAGE_VERSION=alpine:3.18 -t devdotnetorg/openssh-server:alpine-3.18 . 
 docker buildx build --platform linux/arm,linux/arm64,linux/amd64 -f Dockerfile.alpine --build-arg IMAGE_VERSION=alpine:3.17 -t devdotnetorg/openssh-server:alpine-3.17 . 
 docker buildx build --platform linux/arm,linux/arm64,linux/amd64 -f Dockerfile.alpine --build-arg IMAGE_VERSION=alpine:3.16 -t devdotnetorg/openssh-server:alpine-3.16 . 
 docker buildx build --platform linux/arm,linux/arm64,linux/amd64 -f Dockerfile.alpine --build-arg IMAGE_VERSION=alpine:3.15 -t devdotnetorg/openssh-server:alpine-3.15 . 
@@ -55,10 +52,8 @@ docker buildx build --platform linux/arm,linux/arm64,linux/amd64 -f Dockerfile.a
 #:ubuntu-riscv64
 docker buildx build --platform linux/riscv64 -f Dockerfile.ubuntu --build-arg IMAGE_VERSION=riscv64/ubuntu:22.04 -t devdotnetorg/openssh-server:ubuntu-riscv64 . 
 #:debian-riscv64
-docker pull riscv64/debian:sid
 docker buildx build --platform linux/riscv64 -f Dockerfile.ubuntu --build-arg IMAGE_VERSION=riscv64/debian:sid -t devdotnetorg/openssh-server:debian-riscv64 . 
 #:alpine-riscv64
-docker pull riscv64/alpine:edge
 docker buildx build --platform linux/riscv64 -f Dockerfile.alpine --build-arg IMAGE_VERSION=riscv64/alpine:edge -t devdotnetorg/openssh-server:alpine-riscv64 . 
 
 #:latest ubuntu:22.04
@@ -66,4 +61,3 @@ docker buildx build --platform linux/arm,linux/arm64,linux/amd64 -f Dockerfile.u
 
 echo "BUILDX END"
 
-# docker buildx build --platform linux/amd64 -f Dockerfile.alpine --build-arg ALPINE_VER=3.14.0 -t #devdotnetorg/alpine-ssh:alpine-3.14.0-amd64 . --push
