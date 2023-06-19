@@ -56,7 +56,6 @@ For network is mynetwork:
 docker-compose:
 
 ```yaml
----
 version: '3.5'
 services:
   openssh-server:
@@ -67,7 +66,7 @@ services:
     volumes:
       - openssh-server-data:/data
     ports:
-      - 2222:22
+      - "2222:22"
     restart: always
     networks:
       mynetwork:
@@ -78,7 +77,7 @@ volumes:
    name: openssh-server-data
    
 networks:
-  mynetwork:    
+  mynetwork:
     external: true
 ```
 
