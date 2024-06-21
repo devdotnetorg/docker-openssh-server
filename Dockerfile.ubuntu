@@ -7,7 +7,7 @@
 # nslookup, iperf, nmap
 ###########################################
 
-ARG IMAGE_VERSION="ubuntu:22.04"
+ARG IMAGE_VERSION="ubuntu:24.04"
 
 FROM $IMAGE_VERSION
 # Label docker image

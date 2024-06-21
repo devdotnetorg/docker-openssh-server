@@ -21,13 +21,13 @@ Docker official Image Ubuntu, Debian, Alpine with sshd started. Password authent
 
 ## Image Tags
 
-Tags are defined by the mask: `devdotnetorg/openssh-server:<OS_name>-<OS_version>`. For example, the image `devdotnetorg/openssh-server:ubuntu-22.04` is built based on Ubuntu version 22.04.
+Tags are defined by the mask: `devdotnetorg/openssh-server:<OS_name>-<OS_version>`. For example, the image `devdotnetorg/openssh-server:ubuntu-24.04` is built based on Ubuntu version 24.04.
 
 Images for the following OS versions are builded:
 
-* Ubuntu: 23.10, 22.04, 20.04, 18.04, 16.04;
-* Debian: 12, 11, 10;
-* Alpine: 3.19, 3.18, 3.17, 3.16.
+* Ubuntu: 16.04, 18.04, 20.04, 22.04, 22.10, 23.04, 23.10, 24.04;
+* Debian: 10, 11, 12;
+* Alpine: 3.15, 3.16, 3.17, 3.18, 3.19, 3.20.
 
 ### Tags for RISC-V (riscv64)
 
